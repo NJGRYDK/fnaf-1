@@ -1,0 +1,8 @@
+        local player = game.Players.LocalPlayer
+        if player and player.Character and player.Character:FindFirstChild("Humanoid") then
+            if state then
+                player.Character.Humanoid.WalkSpeed = 50 -- Hız artırıldı
+            else
+                player.Character.Humanoid.WalkSpeed = 16 -- Varsayılan hız
+            end
+        end
