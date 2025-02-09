@@ -1,0 +1,29 @@
+local highlight = Instance.new("Highlight")
+highlight.Parent = game.Workspace.Animatronics.Bonnie.BonnieNPC
+highlight.FillColor = Color3.fromRGB(128, 0, 128) -- Mor renk
+highlight.OutlineColor = Color3.fromRGB(255, 255, 255) -- Beyaz dış çizgi (isteğe bağlı)
+highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop -- Nesne arkada olsa bile vurgulansın
+
+local highlight = Instance.new("Highlight")
+highlight.Parent = game.Workspace.Animatronics.Foxy.FoxyNPC
+highlight.FillColor = Color3.fromRGB(220,20,60) -- Kırmızı renk
+highlight.OutlineColor = Color3.fromRGB(255, 255, 255) -- Beyaz dış çizgi (isteğe bağlı)
+highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop -- Nesne arkada olsa bile vurgulansın
+
+local highlight = Instance.new("Highlight")
+highlight.Parent = game.Workspace.Animatronics.Chica.ChicaNPC
+highlight.FillColor = Color3.fromRGB(255,215,0) -- Sarı renk
+highlight.OutlineColor = Color3.fromRGB(255, 255, 255) -- Beyaz dış çizgi (isteğe bağlı)
+highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop -- Nesne arkada olsa bile vurgulansın
+
+local highlight = Instance.new("Highlight")
+highlight.Parent = game.Workspace.Animatronics.Freddy.FreddyNPC
+highlight.FillColor = Color3.fromRGB(205,133,63) -- Kahverengi renk
+highlight.OutlineColor = Color3.fromRGB(255, 255, 255) -- Beyaz dış çizgi (isteğe bağlı)
+highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop -- Nesne arkada olsa bile vurgulansın
+
+local highlight = Instance.new("Highlight")
+highlight.Parent = game.Workspace.Animatronics.GoldenFreddy.GoldenFreddy
+highlight.FillColor = Color3.fromRGB(128,128,0) -- Kapalı Kahverengi Renk
+highlight.OutlineColor = Color3.fromRGB(255, 255, 255) -- Beyaz dış çizgi (isteğe bağlı)
+highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop -- Nesne arkada olsa bile vurgulansın
