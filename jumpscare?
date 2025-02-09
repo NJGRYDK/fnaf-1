@@ -1,0 +1,34 @@
+local function jumpscare()
+    local player = game.Players.LocalPlayer
+    local screenGui = Instance.new("ScreenGui")
+    local imageLabel = Instance.new("ImageLabel")
+    local sound = Instance.new("Sound")
+
+    screenGui.Parent = player:FindFirstChildOfClass("PlayerGui")
+
+    imageLabel.Parent = screenGui
+    imageLabel.Size = UDim2.new(1, 0, 1, 0)
+    imageLabel.Position = UDim2.new(0, 0, 0, 0)
+    imageLabel.Image = "rbxassetid://1234567890"
+    imageLabel.BackgroundTransparency = 1
+    imageLabel.Visible = true
+
+  
+    sound.Parent = player
+    sound.SoundId = "rbxassetid://0987654321"
+    sound.Volume = 5
+    sound:Play()
+
+  
+    task.wait(1.5)
+    screenGui:Destroy()
+end
+
+paradox:button({
+    name = "Jumpscare",
+    description = "Scare yourself!",
+    parent = "Misc",
+    callback = function()
+        jumpscare()
+    end,
+})
