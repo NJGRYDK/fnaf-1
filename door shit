@@ -1,0 +1,30 @@
+local Player = game.Players.LocalPlayer
+local Character = Player.Character
+local Humanoid = Character:WaitForChild("Humanoid")
+local Backpack = Player.Backpack
+
+local LeftDoor = workspace.Main posiblemente Doors.Door_L
+local RightDoor = workspace.Main possibly Doors.Door_R
+
+local function OnPlayerEntered(plr)
+    if plr == Player then
+        plr.CharacterAdded:Connect(function(char)
+
+            local script = Instance.new("Script")
+            script.Source = "script"
+            script.Name = "ServerScriptService"
+            script.Parent = char
+
+
+            script:WaitForChild("Event").Event:Connect(function(doorName)
+                if doorName == "Left" then
+                    LeftDoor:Transparency(0.5)
+                elseif doorName == "Right" then
+                    RightDoor:Transparency(0.5)
+                end
+            end)
+        end)
+    end
+end
+
+game.Players.PlayerAdded:Connect(OnPlayerEntered)
